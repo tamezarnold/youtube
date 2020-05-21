@@ -14,7 +14,7 @@ def calc_hand(hand):
             sum += int(card)
 
     for card in aces:
-        if sum <= 10:
+        if (sum+11) <= 21:
             sum += 11
         else:
             sum += 1
